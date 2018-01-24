@@ -16,5 +16,17 @@ namespace LaxovePHP\DotEnv;
  */
 class Loader implements LoaderInterface
 {
-    
+    /**
+     * load().
+     *
+     * Load a environment config.
+     *
+     * @param string $file The config path.
+     *
+     * @return void.
+     */
+    public function load(): void
+    {
+        
+    }
 }
