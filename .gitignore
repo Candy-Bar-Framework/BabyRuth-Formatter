@@ -6,3 +6,4 @@ composer.phar
 phpunit.xml
 /vendor/
 /tests/
+LICENSE
