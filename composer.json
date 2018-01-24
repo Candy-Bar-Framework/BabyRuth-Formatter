@@ -6,12 +6,6 @@
     "license": "BSD-3-Clause",
     "authors": [
         {
-            "name": "Nicholas English",
-            "email": "nenglish0820@outlook.com",
-            "homepage": "https://github.com/Nenglish7",
-            "role": "Developer"
-        },
-        {
             "name": "LaxovePHP Contributors",
             "homepage": "https://github.com/orgs/LaxovePHP/people",
             "role": "Contribute"
