@@ -1,2 +1,8 @@
 composer.json
 composer.lock
+composer.phar
+.coveralls.yml
+.travis.yml
+phpunit.xml
+/vendor/
+/tests/
