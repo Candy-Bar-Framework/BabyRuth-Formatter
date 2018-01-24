@@ -27,6 +27,5 @@ class Loader implements LoaderInterface
      */
     public function load(): void
     {
-        
     }
 }
