@@ -6,7 +6,10 @@
         "php-component",
         "php7-2",
         "loader",
-        "config"
+        "config",
+        "php7-1",
+        "php7-0",
+        "php5-6"
     ],
     "description": "DotEnv component for LaxovePHP.",
     "homepage": "https://github.com/LaxovePHP/DotEnv",
@@ -19,7 +22,7 @@
             "role": "Developer"
         },
         {
-            "name": "LaxovePHP Contributors",
+            "name": "LaxovePHP",
             "homepage": "https://github.com/orgs/LaxovePHP/people",
             "role": "Contribute"
         }
