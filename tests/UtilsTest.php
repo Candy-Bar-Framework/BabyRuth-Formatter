@@ -76,6 +76,8 @@ final class UtilsTest extends TestCase
                     '2'
                 ]
             ]
+        ],
+        [
         ]
     ];
     public function testDepth0()
@@ -102,5 +104,21 @@ final class UtilsTest extends TestCase
     {
         $this->expectException(Exception\InvalidArgumentException::class);
         Utils::depth((object) array('1'));
+    }
+    public function testDepth5()
+    {
+        reset($this->testCases);
+        $depth0 = Utils::depth($this->testCases[0]);
+        $depth1 = Utils::depth($this->testCases[1]);
+        $depth2 = Utils::depth($this->testCases[2]);
+        $depth3 = Utils::depth($this->testCases[3]);
+        $depth4 = Utils::depth($this->testCases[4]);
+        $depth5 = Utils::depth($this->testCases[5]);
+        $this->assertTrue($depth0 === 1);
+        $this->assertTrue($depth1 === 2);
+        $this->assertTrue($depth2 === 2);
+        $this->assertTrue($depth3 === 3);
+        $this->assertTrue($depth4 === 3);
+        $this->assertTrue($depth5 === 1);
     }
 }
