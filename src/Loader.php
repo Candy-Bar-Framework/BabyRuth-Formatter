@@ -14,7 +14,7 @@ namespace LaxovePHP\DotEnv;
 /**
  * Loader.
  */
-class Loader implements LoaderInterface
+final class Loader implements LoaderInterface
 {
     /**
      * load().
