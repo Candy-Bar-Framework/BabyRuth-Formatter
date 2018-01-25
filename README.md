@@ -11,12 +11,6 @@ You can use the installer by going to their [website](https://getcomposer.org/) 
 ```sh
 composer require laxove-php/dotenv
 ```
-## Versioning
-For transparency into our release cycle and in striving to maintain backward compatibility, LaxovePHP/DotEnv is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
-
-## Copyright and license
-Copyright (c) 2018 [LaxovePHP](https://github.com/LaxovePHP). The code is released under the [BSD-3-Clause](https://github.com/LaxovePHP/DotEnv/blob/master/LICENSE).
-
 ## Links
 - File issues at <https://github.com/LaxovePHP/LaxovePHP/issues>
 - Documentation is at <https://github.com/LaxovePHP/LaxovePHP/tree/master/docs/dotenv>
