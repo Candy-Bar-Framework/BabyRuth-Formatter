@@ -21,6 +21,7 @@ interface ParserInterface
      * @param mixed $options The list of avaliable options.
      * @param bool $strict Should the parser run under strict mode.
      *
+     * @throws InvalidArgumentException If the options can not be accessed.
      * @throws UnexpectedValueException If the option is not a valid one.
      * @throws InvalidArgumentException If the data type for that option is invalid.
      * @throws DomainException          If the data for that option is still invalid.
