@@ -2,9 +2,6 @@
 /**
  * This file is a part of LaxovePHP.
  *
- * @author Nicholas English       <https://github.com/Nenglish7>.
- * @author LaxovePHP Contributors <https://github.com/orgs/LaxovePHP/people>.
- *
  * @copyright 2017-2018 LaxovePHP.
  *
  * @link    <https://github.com/LaxovePHP/DotEnv> Github Repository.
@@ -16,4 +13,5 @@ namespace LaxovePHP\DotEnv;
  */
 interface LoaderInterface
 {
+    public function load($path);
 }
