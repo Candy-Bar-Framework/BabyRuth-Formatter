@@ -6,6 +6,7 @@ composer.phar
 phpunit.xml
 /vendor/
 /tests/
+/bin/
 LICENSE
 CHANGELOG.md
 README.md
