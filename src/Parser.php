@@ -14,6 +14,23 @@ namespace LaxovePHP\DotEnv;
 class Parser implements ParserInterface
 {
     /**
+     * @var array $avaliableOptions A list of avaliable options.
+     */
+    private $avaliableOptions = [
+        'mode' => [
+            'expectedType' => 'string',
+            'exceptionTypes' => [
+            ]
+        ]
+        'processor' => [
+            'expectedType' => 'mixed'
+            'instanceOf' => Processor::class,
+            'exceptionTypes' => [
+                'array'
+            ]
+        ]
+    ];
+    /**
      * @var bool $strict The parser strict mode.
      */
     private $strict = false;
@@ -37,10 +54,21 @@ class Parser implements ParserInterface
         $this->strict = boolval($strict);
         if (!is_array($options) && !($options instanceof \Traversable))
         {
-            throw new InvalidArgumentException(sprintf(
+            throw new Exception\InvalidArgumentException(sprintf(
                 'The options can not be accessed due the invalid data type. Passed `%s`.',
                 htmlspecialchars(var_export(serialize($options), true), ENT_QUOTES, 'UTF-8')
             ));
+        }
+        foreach ($options as $name => $option)
+        {
+            if (!array_key_exists($name, $this->avaliableOptions)
+            {
+                throw new Exception\UnexpectedValueException(sprintf(
+                    'The current option can be verified as it does not exist or is not supported. Expected `mode`, `processor`. Passed ``.', 
+                    htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
+                ));
+            }
+
         }
     }
 }
