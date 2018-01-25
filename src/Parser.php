@@ -13,4 +13,26 @@ namespace LaxovePHP\DotEnv;
  */
 class Parser implements ParserInterface
 {
+    /**
+     * @var bool $strict The parser strict mode.
+     */
+    private $strict = false;
+    /**
+     * __construct().
+     *
+     * Set any avaliable options for the parser.
+     *
+     * @param mixed $options The list of avaliable options.
+     * @param bool $strict Should the parser run under strict mode.
+     *
+     * @throws UnexpectedValueException If the option is not a valid one.
+     * @throws InvalidArgumentException If the data type for that option is invalid.
+     * @throws DomainException          If the data for that option is still invalid.
+     *
+     * @return void.
+     */
+    function __construct($options = [], $strict)
+    {
+        $this->strict = boolval($strict);
+    }
 }
