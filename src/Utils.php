@@ -40,10 +40,10 @@ class Utils
      */
     public static function depth($testSubject)
     {
-        if (!is_array($testSubject)) {
-            throw new Exception\InvalidArgumentException(sprintf(
+        if (!\is_array($testSubject)) {
+            throw new Exception\InvalidArgumentException(\sprintf(
                 'Invalid data type passed for the 1st argument. Passed `%s`.',
-                htmlspecialchars(var_export(serialize($testSubject), true), ENT_QUOTES, 'UTF-8')
+                \htmlspecialchars(\var_export(\serialize($testSubject), true), \ENT_QUOTES, 'UTF-8')
             ));
         }
         $depth = 1;
@@ -51,13 +51,13 @@ class Utils
             goto done;
         }
         foreach ($testSubject as $elementList) {
-            if (is_array($elementList)) {
+            if (\is_array($elementList)) {
                 $depth += self::depth($elementList);
                 break;
             }
         }
         done:
-        return $depth;
+        return (int) $depth;
     }
     /**
      * parse().
