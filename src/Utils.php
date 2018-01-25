@@ -43,6 +43,6 @@ class Utils
             }
         }
         done:
-        return $depth
+        return $depth;
     }
 }
