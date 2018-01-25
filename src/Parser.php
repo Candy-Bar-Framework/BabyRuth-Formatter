@@ -18,22 +18,23 @@ class Parser implements ParserInterface
      */
     private $avaliableOptions = [
         'mode' => [
-            'expectedType' => 'string',
-            'exceptionTypes' => [
-            ]
+            'expectedType' => 's',
+            'exceptionTypes' => [ ]
         ],
         'processor' => [
-            'expectedType' => 'mixed',
+            'expectedType' => 'm',
             'instanceOf' => Processor::class,
-            'exceptionTypes' => [
-                'array'
-            ]
+            'exceptionTypes' => [ 'a' ]
         ]
     ];
     /**
      * @var bool $strict The parser strict mode.
      */
     private $strict = false;
+    /**
+     * @var int $method The parser run method.
+     */
+    private $method;
     /**
      * __construct().
      *
@@ -42,6 +43,7 @@ class Parser implements ParserInterface
      * @param mixed $options The list of avaliable options.
      * @param bool $strict Should the parser run under strict mode.
      *
+     * @throws RuntimeException         If the avaliable options array is invalid.
      * @throws InvalidArgumentException If the options can not be accessed.
      * @throws UnexpectedValueException If the option is not a valid one.
      * @throws InvalidArgumentException If the data type for that option is invalid.
@@ -52,23 +54,36 @@ class Parser implements ParserInterface
     function __construct($options = [], $strict)
     {
         $this->strict = boolval($strict);
-        if (!is_array($options) && !($options instanceof \Traversable))
-        {
+        if (!is_array($options) && !($options instanceof \Traversable)) {
             throw new Exception\InvalidArgumentException(sprintf(
                 'The options can not be accessed due the invalid data type. Passed `%s`.',
                 htmlspecialchars(var_export(serialize($options), true), ENT_QUOTES, 'UTF-8')
             ));
         }
-        foreach ($options as $name => $option)
-        {
-            if (!array_key_exists($name, $this->avaliableOptions)
-            {
+        if (is_null($options) || empty($options) || $options == '' || $options === null || $options === 0) {
+            goto skip;
+        }
+        foreach ($options as $name => $option) {
+            if (!array_key_exists($name, $this->avaliableOptions) {
                 throw new Exception\UnexpectedValueException(sprintf(
                     'The current option can be verified as it does not exist or is not supported. Expected `mode`, `processor`. Passed ``.', 
                     htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
                 ));
             }
-
+            if (!in_array($this->avaliableOptions['mode']['expectedType'], [ 'a', 'b', 'm', 'i', 'o', 'f'], true))
+            {
+                throw new Exception\RuntimeException('The avaliable options array is invalid.');
+            }
+            
         }
+        $this->currentOptions = $options;
+        goto stop;
+        skip:
+        $this->method = 0;
+        $this->currentOptions = [
+            'mode' => 'regular',
+            'processor' => Processor::class
+        ];
+        stop:
     }
 }
