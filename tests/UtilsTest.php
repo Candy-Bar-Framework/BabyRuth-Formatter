@@ -78,29 +78,29 @@ final class UtilsTest extends TestCase
             ]
         ]
     ];
-    public function testDepth()
+    public function testDepth0()
     {
         $this->expectException(Exception\InvalidArgumentException::class);
         Utils::depth('');
     }
-    public function testDepth2()
+    public function testDepth1()
     {
         $this->expectException(Exception\InvalidArgumentException::class);
         Utils::depth(0);
     }
-    public function testDepth()
+    public function testDepth2()
     {
         $this->expectException(Exception\InvalidArgumentException::class);
         Utils::depth(0.0);
     }
-    public function testDepth()
+    public function testDepth3()
     {
         $this->expectException(Exception\InvalidArgumentException::class);
         Utils::depth((object) array('1', '2', '3'));
     }
-    public function testDepth()
+    public function testDepth4()
     {
         $this->expectException(Exception\InvalidArgumentException::class);
-        Utils::depth((object) array('1', '2', '3'));
+        Utils::depth((object) array('1'));
     }
 }
