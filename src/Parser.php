@@ -43,7 +43,6 @@ class Parser implements ParserInterface
      * @param mixed $options The list of avaliable options.
      * @param bool $strict Should the parser run under strict mode.
      *
-     * @throws RuntimeException         If the avaliable options array is invalid.
      * @throws InvalidArgumentException If the options can not be accessed.
      * @throws UnexpectedValueException If the option is not a valid one.
      * @throws InvalidArgumentException If the data type for that option is invalid.
@@ -70,9 +69,12 @@ class Parser implements ParserInterface
                     htmlspecialchars($name, ENT_QUOTES, 'UTF-8')
                 ));
             }
-            if (!in_array($this->avaliableOptions['mode']['expectedType'], [ 'a', 'b', 'm', 'i', 'o', 'f'], true))
+            if (!$this->match($option, $this->avaliableOptions['mode']['expectedType']))
             {
-                throw new Exception\RuntimeException('The avaliable options array is invalid.');
+                throw new Exception\InvalidArgumentException(sprintf(
+                    'The expected data type does not match the option data type. Passed `%s`.',
+                    gettype($option)
+                ));
             }
             
         }
