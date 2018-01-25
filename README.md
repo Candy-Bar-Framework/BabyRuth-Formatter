@@ -1,4 +1,4 @@
-[![Coveralls github](https://img.shields.io/coveralls/github/LaxovePHP/DotEnv.svg?style=flat-square)](https://coveralls.io/github/LaxovePHP/DotEnv) [![Travis](https://img.shields.io/travis/LaxovePHP/DotEnv.svg?style=flat-square)](https://travis-ci.org/LaxovePHP/DotEnv)
+[![Travis](https://img.shields.io/travis/LaxovePHP/DotEnv.svg?style=flat-square)](https://travis-ci.org/LaxovePHP/DotEnv) [![Coveralls github](https://img.shields.io/coveralls/github/LaxovePHP/DotEnv.svg?style=flat-square)](https://coveralls.io/github/LaxovePHP/DotEnv)
 
 --------
 [READ-ONLY] DotEnv component for LaxovePHP.
