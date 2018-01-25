@@ -21,9 +21,9 @@ class Parser implements ParserInterface
             'expectedType' => 'string',
             'exceptionTypes' => [
             ]
-        ]
+        ],
         'processor' => [
-            'expectedType' => 'mixed'
+            'expectedType' => 'mixed',
             'instanceOf' => Processor::class,
             'exceptionTypes' => [
                 'array'
