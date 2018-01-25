@@ -53,7 +53,7 @@ class Utils
         foreach ($testSubject as $elementList) {
             if (\is_array($elementList)) {
                 $depth += self::depth($elementList);
-                \break;
+                break;
             }
         }
         done:
