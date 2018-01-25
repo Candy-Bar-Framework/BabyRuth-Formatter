@@ -14,7 +14,21 @@ namespace LaxovePHP\DotEnv;
 class Utils
 {
     /**
-     * depth();
+     * element().
+     *
+     * Validate the array elements.
+     *
+     * @param array $elementSubject The array to test.
+     *
+     * @throws InvalidArgumentException If $testSubject is not an array.
+     *
+     * @return bool Return TRUE if the array is valid else return FALSE.
+     */
+    public static function element($elementSubject)
+    {
+    }
+    /**
+     * depth().
      *
      * Get the depth of an array.
      *
@@ -22,7 +36,7 @@ class Utils
      *
      * @throws InvalidArgumentException If $testSubject is not an array.
      *
-     * @return int The array depth.
+     * @return int Return the array depth.
      */
     public static function depth($testSubject)
     {
@@ -44,5 +58,15 @@ class Utils
         }
         done:
         return $depth;
+    }
+    /**
+     * parse().
+     *
+     * Parse the ini config file.
+     *
+     * @return array Return the ini config file in the form of an array.
+     */
+    public static function parse()
+    { 
     }
 }
