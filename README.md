@@ -15,7 +15,7 @@ composer require laxove-php/dotenv
 For transparency into our release cycle and in striving to maintain backward compatibility, LaxovePHP/DotEnv is maintained under [the Semantic Versioning guidelines](http://semver.org/). Sometimes we screw up, but we'll adhere to those rules whenever possible.
 
 ## Copyright and license
-Copyright (c) 2018 [LaxovePHP](https://github.com/orgs/LaxovePHP/people). The code is released under the [BSD-3-Clause](https://github.com/LaxovePHP/DotEnv/blob/master/LICENSE).
+Copyright (c) 2018 [LaxovePHP](https://github.com/LaxovePHP). The code is released under the [BSD-3-Clause](https://github.com/LaxovePHP/DotEnv/blob/master/LICENSE).
 
 ## Links
 - File issues at <https://github.com/LaxovePHP/LaxovePHP/issues>
