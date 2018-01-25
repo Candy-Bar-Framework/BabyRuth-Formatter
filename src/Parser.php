@@ -39,7 +39,7 @@ class Parser implements ParserInterface
         {
             throw new InvalidArgumentException(sprintf(
                 'The options can not be accessed due the invalid data type. Passed `%s`.',
-                htmlspecialchars(var_export(serialize($options), ENT_QUOTES, 'UTF-8')
+                htmlspecialchars(var_export(serialize($options), true), ENT_QUOTES, 'UTF-8')
             ));
         }
     }
