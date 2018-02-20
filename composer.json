@@ -5,25 +5,25 @@
         "php-library",
         "php-component",
         "php7-2",
-        "loader",
-        "config",
-        "php7-1",
-        "php7-0",
-        "php5-6"
+        "json-formatter",
+        "yaml-formatter",
+        "php72",
+        // "php73",
+        // "php74"
     ],
-    "description": "DotEnv component for LaxovePHP.",
-    "homepage": "https://github.com/LaxovePHP/DotEnv",
+    "description": "An extremely fast XML, JSON, and YAML formatter.",
+    "homepage": "https://github.com/genial-framework/BabyRuth-Formatter",
     "license": "BSD-3-Clause",
     "authors": [
         {
             "name": "Nicholas English",
             "email": "nenglish0820@outlook.com",
-            "homepage": "https://github.com/Nenglish7",
-            "role": "Developer"
+            "homepage": "https://github.com/obozaxy",
+            "role": "Develop/Maintain"
         },
         {
-            "name": "LaxovePHP",
-            "homepage": "https://github.com/orgs/LaxovePHP/people",
+            "name": "Repository Contributors",
+            "homepage": "https://github.com/genial-framework/BabyRuth-Formatter/graphs/contributors",
             "role": "Contribute"
         }
     ],
