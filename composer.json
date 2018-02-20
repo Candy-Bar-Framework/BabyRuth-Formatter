@@ -1,19 +1,19 @@
 {
-    "name": "genial-framework/babyruth-formatter",
+    "name": "genial-framework/babyruth-xml-json-yaml-parser.",
     "type": "library",
     "keywords": [
         "php-library",
         "php-component",
         "genial-framework",
-        "xml-formatter",
-        "json-formatter",
-        "yaml-formatter",
+        "xml-parser",
+        "json-parser",
+        "yaml-parser",
         "php72",
         "php73",
         "php74"
     ],
-    "description": "An extremely fast XML, JSON, and YAML formatter.",
-    "homepage": "https://github.com/genial-framework/BabyRuth-Formatter",
+    "description": "An extremely fast XML, JSON, and YAML parser.",
+    "homepage": "https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser",
     "license": "BSD-3-Clause",
     "authors": [
         {
