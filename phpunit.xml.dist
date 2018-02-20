@@ -16,8 +16,6 @@
          processIsolation="false"
          stopOnError="false"
          stopOnFailure="false"
-         failOnRisky="false"
--        failOnWarning="false"
          stopOnIncomplete="false"
          stopOnSkipped="false"
          stopOnRisky="false"
@@ -34,20 +32,20 @@
         </whitelist>
     </filter>
     <logging>
-        <log type="coverage-clover" target="./build/logs/clover.xml" />
+        <log type="coverage-clover" target="./build/logs/clover.xml"/>
     </logging>
     <testsuites>
         <testsuite name="genial-framework/BabyRuth-Formatter YAML Test Suite">
-            <directory suffix="YAMLTest.php">./tests/yaml</directory>
+            <directory suffix="YAMLTest.php">./tests/yaml/</directory>
         </testsuite>
         <testsuite name="genial-framework/BabyRuth-Formatter XML Test Suite">
-            <directory suffix="XMLTest.php">./tests/xml</directory>
+            <directory suffix="XMLTest.php">./tests/xml/</directory>
         </testsuite>
         <testsuite name="genial-framework/BabyRuth-Formatter JSON Test Suite">
-            <directory suffix="JSONTest.php">./tests/json</directory>
+            <directory suffix="JSONTest.php">./tests/json/</directory>
         </testsuite>
         <testsuite name="genial-framework/BabyRuth-Formatter Test Suite">
-            <directory suffix="Test.php">./tests/main</directory>
+            <directory suffix="Test.php">./tests/main/</directory>
         </testsuite>
     </testsuites>
 </phpunit>
