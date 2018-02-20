@@ -1,8 +1,8 @@
-[![Build Status](https://travis-ci.org/genial-framework/BabyRuth-XML-JSON-YAML-Parser.svg?branch=master)](https://travis-ci.org/genial-framework/BabyRuth-XML-JSON-YAML-Parser) [![Coverage Status](https://coveralls.io/repos/github/genial-framework/BabyRuth-XML-JSON-YAML-Parser/badge.svg?branch=master)](https://coveralls.io/github/genial-framework/BabyRuth-XML-JSON-YAML-Parser?branch=master)
+[![Build Status](https://travis-ci.org/genial-framework/Parser.svg?branch=master)](https://travis-ci.org/genial-framework/Parser) [![Coverage Status](https://coveralls.io/repos/github/genial-framework/Parser/badge.svg?branch=master)](https://coveralls.io/github/genial-framework/Parser?branch=master)
 
 --------
-BabyRuth-XML-JSON-YAML-Parser Component [READ-ONLY]. An extremely fast XML, JSON, and YAML parser.
+Parser component from Genial Framework [READ-ONLY]. An extremely fast XML, JSON, and YAML parser.
 
 ## Links
-- File issues at <https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser/issues>
-- Documentation is at <https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser/tree/master/docs>
+- File issues at <https://github.com/genial-framework/Parser/issues>
+- Documentation is at <https://github.com/genial-framework/Parser/tree/master/docs>
