@@ -3,9 +3,6 @@
 --------
 BabyRuth-XML-JSON-YAML-Parser Component [READ-ONLY]. An extremely fast XML, JSON, and YAML parser.
 
-## Installation 
-
-
 ## Links
 - File issues at <https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser/issues>
 - Documentation is at <https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser/tree/master/docs>
