@@ -5,14 +5,12 @@
         "php-library",
         "php-component",
         "genial-framework",
-        "xml-parser",
-        "json-parser",
-        "yaml-parser",
+        "parser",
         "php72",
         "php73",
         "php74"
     ],
-    "description": "BabyRuth-XML-JSON-YAML-Parser Component [READ-ONLY]. An extremely fast XML, JSON, and YAML parser.",
+    "description": "Parser component from Genial Framework [READ-ONLY]. An extremely fast and eloquent parser.",
     "homepage": "https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser",
     "license": "BSD-3-Clause",
     "authors": [
@@ -33,7 +31,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Genial\\BabyRuth\\": "src/"
+            "Genial\\Parser\\": "src/"
         }
     },
     "require-dev": {
