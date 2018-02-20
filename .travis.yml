@@ -1,9 +1,9 @@
 language: php
 sudo: false
 php:
-    - 7.0.27
-    - 7.1.13
-    - 7.2.1
+    - 7.2.2
+#   - 7.3.0
+#   - 7.4.0
     - "nightly"
 matrix:
     fast_finish: true
@@ -12,11 +12,7 @@ matrix:
 os:
     - windows
     - linux
-before_install:
-    - git clone -b stable https://github.com/jedisct1/libsodium.git
-    - cd libsodium && sudo ./configure && sudo make check && sudo make install && cd ..
 install:
-    - pecl install libsodium
     - travis_retry composer install --no-interaction
 cache:
     directories:
