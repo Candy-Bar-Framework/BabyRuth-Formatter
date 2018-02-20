@@ -12,7 +12,7 @@
         "php73",
         "php74"
     ],
-    "description": "An extremely fast XML, JSON, and YAML parser.",
+    "description": "BabyRuth-XML-JSON-YAML-Parser Component [READ-ONLY]. An extremely fast XML, JSON, and YAML parser.",
     "homepage": "https://github.com/genial-framework/BabyRuth-XML-JSON-YAML-Parser",
     "license": "BSD-3-Clause",
     "authors": [
